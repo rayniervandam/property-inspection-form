@@ -1,0 +1,10 @@
+<!doctype html><html dir="ltr" lang="en"><head> <meta charset="utf-8"> <title>Property Inspection Form</title> <meta name="Description" content="Welcome to the Stencil App Starter. You can use this starter to build entire apps all with web components using Stencil!"> <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"> <meta name="theme-color" content="#16161d"> <meta name="apple-mobile-web-app-capable" content="yes"> <meta http-equiv="x-ua-compatible" content="IE=Edge"> <script type="module" src="/build/app.esm.js" data-stencil></script> <script nomodule="" src="/build/app.js" data-stencil></script> <link href="/build/app.css" rel="stylesheet"> <link rel="apple-touch-icon" href="/assets/icon/icon.png"> <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.ico"> <link rel="manifest" href="/manifest.json"> <!-- pdfmake --> <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.3.0-beta.1/pdfmake.min.js" integrity="sha512-G332POpNexhCYGoyPfct/0/K1BZc4vHO5XSzRENRML0evYCaRpAUNxFinoIJCZFJlGGnOWJbtMLgEGRtiCJ0Yw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.3.0-beta.1/vfs_fonts.min.js" integrity="sha512-6RDwGHTexMgLUqN/M2wHQ5KIR9T3WVbXd7hg0bnT+vs5ssavSnCica4Uw0EJnrErHzQa6LRfItjECPqRt4iZmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> <!-- Signature Pad --> <script src="https://cdn.jsdelivr.net/npm/signature_pad@4.0.0/dist/signature_pad.umd.min.js"></script> <!-- FontAwesome --> <script src="https://kit.fontawesome.com/34fd0d33fa.js" crossorigin="anonymous"></script> </head> <body> <app-root></app-root> <script>
+if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+  // auto-unregister service worker during dev mode
+  navigator.serviceWorker.getRegistration().then(function(registration) {
+  if (registration) {
+    registration.unregister().then(function() { location.reload(true) });
+  }
+  });
+}
+</script></body></html>
